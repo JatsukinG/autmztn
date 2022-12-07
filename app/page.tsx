@@ -1,5 +1,4 @@
 //@ts-nocheck
-
 import Header from 'app/components/header/Header'
 import Link from 'next/link'
 
@@ -21,8 +20,12 @@ export default function Home() {
               <button className="bg-green-400 mr-4 px-4 py-3 rounded-2xl hover:bg-green-600">
                 <Link href="/quick-start">Quick start</Link>
               </button>
-              <button className="bg-violet-400 mr-4 px-4 py-3 rounded-2xl hover:bg-violet-600">Sing up</button>
-              <button className="bg-blue-400 mr-4 px-4 py-3 rounded-2xl hover:bg-blue-600"><Link href="/auth/login">Sing in</Link></button>
+              <button className="bg-violet-400 mr-4 px-4 py-3 rounded-2xl hover:bg-violet-600">
+                Sing up
+              </button>
+              <button className="bg-blue-400 mr-4 px-4 py-3 rounded-2xl hover:bg-blue-600">
+                <Link href="/auth/login">Sing in</Link>
+              </button>
             </div>
           </div>
           <img src="/robot.svg" alt="Logo" className="w-72 animate-bounce"/>

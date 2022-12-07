@@ -43,8 +43,16 @@ const JuryAbsolute = () => {
         <div className="w-3/4 text-center h-2/3 border-2 rounded-2xl mt-8 overflow-y-scroll">
           {
             showResults ?
-                <div className="flex">
-                  {numbersArray.map((number, index) => <p key={index}>{`a${index}=${number}`}</p>)}
+                <div className="flex flex-col items-center p-4">
+                  <div className="flex mb-8">
+                    {
+                      numbersArray.map((number, index) =>
+                          <p key={index} className="px-4 py-2 border-2 border-gray-500 rounded-2xl mr-4">a{
+                            <sub>{index}</sub>} = {number}</p>
+                      )
+                    }
+                  </div>
+                  <h4>Primer paso:</h4>
                 </div>
                 :
                 <p className="p-4">
